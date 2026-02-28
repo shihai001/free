@@ -5,23 +5,23 @@ import base64
 # 这里内置了几个常见的公开测试源作为演示
 # 替换为你 main.py 中的 SOURCES 部分
 SOURCES = [
-    # 1. aiboboxx 每日更新的高质量 V2ray 源 (更新极快，存活率较高)
-    "https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2",
+    # 1. Epodonios (极冷门源，伊朗开发者维护，号称每 5 分钟执行一次 Actions 抓取)
+    "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/All_Configs_base64_Sub.txt",
+
+    # 2. MatinGhanbari (高质量中东冷门源，每 15 分钟更新，带节点去重机制)
+    "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/all_sub.txt",
     
-    # 2. ermaozi 自动抓取并测速的订阅源
-    "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt",
+    # 3. ebrasha (非常纯净的节点池，每 15 分钟清洗一次，自动剔除失效节点)
+    "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/all_extracted_configs.txt",
+
+    # 4. topvpnlist (通过 V2rayCollector 自动搜刮全网小众博客的源，每天多次更新)
+    "https://raw.githubusercontent.com/topvpnlist/topvpnlist.github.io/main/subscriptions/all.txt",
+
+    # 5. soroushmirzaei (专门抓取电报群的实时 VLESS 节点，国内用的人少，连通率不错)
+    "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vless",
     
-    # 3. pawdroid 全网节点聚合池 (基数大，包含大量 VLESS/VMess/Trojan)
-    "https://raw.githubusercontent.com/pawdroid/Free-servers/main/Sub",
-    
-    # 4. mahdibland 全球最大的 Shadowsocks/V2ray 聚合池之一 (Eternity 版本)
-    "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity",
-    
-    # 5. Mfuu 自动抓取测速源
-    "https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray",
-    
-    # 6. tbbatbb 每日活跃节点聚合
-    "https://raw.githubusercontent.com/tbbatbb/Proxy/master/main/v2ray.txt"
+    # 6. soroushmirzaei (同上，VMess 专属节点池)
+    "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vmess"
 ]
 
 def decode_base64(data):
