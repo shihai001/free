@@ -5,18 +5,23 @@ import base64
 # 这里内置了几个常见的公开测试源作为演示
 # 替换为你 main.py 中的 SOURCES 部分
 SOURCES = [
-    # Barry-far 的高频更新聚合（目前全球最大的存活节点池之一，每隔几小时清洗一次）
-    "https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub1.txt",
-    "https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub2.txt",
+    # 1. aiboboxx 每日更新的高质量 V2ray 源 (更新极快，存活率较高)
+    "https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2",
     
-    # NodeFree 每日实时更新源 (质量相对较高)
-    "https://nodefree.org/dy/v2ray.txt",
+    # 2. ermaozi 自动抓取并测速的订阅源
+    "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt",
     
-    # 一个专门抓取 TG 频道新鲜节点的动态 API
-    "https://sub.bonds.id/v2?pt=v2ray",
+    # 3. pawdroid 全网节点聚合池 (基数大，包含大量 VLESS/VMess/Trojan)
+    "https://raw.githubusercontent.com/pawdroid/Free-servers/main/Sub",
     
-    # 纯 Base64 每日更新源
-    "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt"
+    # 4. mahdibland 全球最大的 Shadowsocks/V2ray 聚合池之一 (Eternity 版本)
+    "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity",
+    
+    # 5. Mfuu 自动抓取测速源
+    "https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray",
+    
+    # 6. tbbatbb 每日活跃节点聚合
+    "https://raw.githubusercontent.com/tbbatbb/Proxy/master/main/v2ray.txt"
 ]
 
 def decode_base64(data):
