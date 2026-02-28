@@ -3,7 +3,7 @@ name: Auto Update Nodes
 # 触发条件
 on:
   schedule:
-    - cron: '0 0,12 * * *'  # 每天 UTC 时间 0点 和 12点 自动运行 (北京时间 8点和20点)
+    - cron: '0 0,6 * * *'  # 每天 UTC 时间 0点 和 12点 自动运行 (北京时间 8点和20点)
   workflow_dispatch:        # 允许你在网页上随时手动点击运行
 
 # 运行任务
