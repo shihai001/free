@@ -5,20 +5,18 @@ import base64
 # 这里内置了几个常见的公开测试源作为演示
 # 替换为你 main.py 中的 SOURCES 部分
 SOURCES = [
-    # Mahdibland 的高频测速聚合源 (非常知名，几小时更新一次，去除了死节点)
-    "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity",
+    # Barry-far 的高频更新聚合（目前全球最大的存活节点池之一，每隔几小时清洗一次）
+    "https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub1.txt",
+    "https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub2.txt",
     
-    # 自动代理池 (经过可用性过滤)
-    "https://raw.githubusercontent.com/w1770946466/Auto_Proxy/main/Subscription/V2ray.txt",
+    # NodeFree 每日实时更新源 (质量相对较高)
+    "https://nodefree.org/dy/v2ray.txt",
     
-    # mfuu 的高频更新源
-    "https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray",
+    # 一个专门抓取 TG 频道新鲜节点的动态 API
+    "https://sub.bonds.id/v2?pt=v2ray",
     
-    # Pawdroid 提供的过滤后订阅
-    "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
-    
-    # 也可以加上一些专门收集 tg 频道的源
-    "https://raw.githubusercontent.com/tbbatbb/Proxy/master/manual/v2ray.txt"
+    # 纯 Base64 每日更新源
+    "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt"
 ]
 
 def decode_base64(data):
