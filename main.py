@@ -3,10 +3,22 @@ import base64
 
 # 1. 在这里填入你想采集的公开订阅源URL (支持Base64或明文格式)
 # 这里内置了几个常见的公开测试源作为演示
+# 替换为你 main.py 中的 SOURCES 部分
 SOURCES = [
+    # Mahdibland 的高频测速聚合源 (非常知名，几小时更新一次，去除了死节点)
+    "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity",
+    
+    # 自动代理池 (经过可用性过滤)
+    "https://raw.githubusercontent.com/w1770946466/Auto_Proxy/main/Subscription/V2ray.txt",
+    
+    # mfuu 的高频更新源
+    "https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray",
+    
+    # Pawdroid 提供的过滤后订阅
     "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
-    "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt",
-    "https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2"
+    
+    # 也可以加上一些专门收集 tg 频道的源
+    "https://raw.githubusercontent.com/tbbatbb/Proxy/master/manual/v2ray.txt"
 ]
 
 def decode_base64(data):
